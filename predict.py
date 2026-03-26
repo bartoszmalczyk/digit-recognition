@@ -12,6 +12,6 @@ img_array = img_array.reshape(1, 784)
 model = tf.keras.models.load_model('digit_recognition.keras')
 
 prediction = model.predict(img_array)
-wynik = np.argmax(prediction)
+output = np.argmax(prediction)
 
-print(f"Detected number: {wynik}")
+print(f"Detected number: {output}")

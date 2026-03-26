@@ -20,13 +20,13 @@ pip install tensorflow numpy pillow
 ```
 
 ## Train the model
-Open and run the notebook:
+Open and run the notebook (optionally — there is a trained model already):
 - `main.ipynb`
 
 It trains on MNIST and saves the model to `digit_recognition.keras`.
 
 ## Run a prediction
-1. Put your 28x28 (or any size) digit image in the repo root as `your_digit.png` (grayscale works best).
+1. Put your 28x28 (or any size) digit image in the repo root as `your_digit.png` (black background, white digit).
 2. Run:
 ```bash
 python predict.py
@@ -34,4 +34,3 @@ python predict.py
 
 The script prints:
 - `Detected number: <digit>`
-````
